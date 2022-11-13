@@ -1,5 +1,5 @@
 // import Setup from './typography'
-import Grid from './grid'
+import Grid from './Grid'
 // import Card from './components/NoteCard'
 // import Setup from './components/AvatarCard'
 

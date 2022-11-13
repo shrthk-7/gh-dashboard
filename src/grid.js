@@ -1,31 +1,29 @@
 import React from "react";
 import {Grid, Paper, Container, Stack, Typography} from "@mui/material";
-import { indigo, teal } from "@mui/material/colors";
+import { teal } from "@mui/material/colors";
 import NoteCard from "./components/NoteCard";
 import AvatarCard from "./components/AvatarCard";
 import RepoCard from "./components/RepoCard";
+import LanguagesCard from "./components/LanguagesCard";
 import notes from './data.json';
-
 import repos from './repos.json'
-import { Palette } from "@mui/icons-material";
 
 function Setup(props) {
 	let { user } = props
-	// console.log(user)
 
 	return (
 		<>
-		<Container >
+		<Container maxWidth={'xl'}>
 		<Grid container spacing={3}>
 		<Grid item xs={12} md={8}>
-			<Stack spacing={3}>
+			<Stack spacing={3} height="100%">
 				<AvatarCard 
 				{...user}
 				/>
-				<NoteCard note={notes[0]}/>
+				<LanguagesCard/>
 			</Stack>
 		</Grid>
-		<Grid item xs={12} md={4} gridRow={"1/-1"}>
+		<Grid item xs={12} md={4}>
 			<NoteCard note={notes[0]}/>
 		</Grid>
 		</Grid>

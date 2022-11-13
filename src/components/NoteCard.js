@@ -9,7 +9,9 @@ function NoteCard({note}) {
 	// 	height: '100%'
 	// }}>
 	<Card elevation={4} style={{
-		height: '100%'
+		height: '100%',
+		overflow: 'scroll',
+		scrollbarWidth: 'none'
 	}}>
 		<CardHeader
 		action={
@@ -22,6 +24,7 @@ function NoteCard({note}) {
 		/>
 		<CardContent>
 			<Typography>
+				{note.details}
 				{note.details}
 			</Typography>
 		</CardContent>

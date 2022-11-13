@@ -8,7 +8,6 @@ function RepoCard({repo}) {
   return (
 	<Card elevation={10} style={{
 		height: '100%',
-		color: teal[200],
 		borderRadius: '1rem',
 		borderColor: teal[400],
 		borderStyle: 'solid',

@@ -6,7 +6,11 @@ let s = "Lorem Ipsum is simply dummy text of the printing and typesetting indust
 function AvatarCard({login, url, avatar_url, location, bio}) {
 	return (
 	<Card elevation={10} style={{
-		borderRadius:'1rem'
+		borderRadius:'1rem',
+		height: 'fit-content',
+		minHeight: '8rem',
+		alignItems:'center',
+		justifyContent:'center'
 	}}>
 		<Stack 
 		direction="row" 
